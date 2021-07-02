@@ -1,0 +1,37 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $tideWaterGreen;
+    padding: 1rem;
+
+    .textFollow {
+        color: white;
+        font-family: $textFontS;
+        font-size: 12px;
+    }
+
+    .socialNetworks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .snLogo {
+            width: 2rem;
+            margin: 0.3rem;
+        }
+    }
+
+    .contactLink {
+        color: white;
+        font-family: $textFontS;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+
+}

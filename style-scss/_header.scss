@@ -1,0 +1,102 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $tideWaterGreen;
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    .navTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: $titleFont;
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+        .logo {
+            width: 2rem;
+        }
+    }
+    .navLinks {
+        display: none;
+    }
+    .hamLink {
+        display: inherit;
+        .hamMenu {
+            width: 1.5rem;
+        }
+    }
+}
+.mobileLinks {
+    display: none;
+    .menuWrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        font-family: $textFontS;
+        .navLink {
+            padding: 10px;
+            font-size: 1rem;
+            color: white;
+            text-decoration: none;
+            border-bottom: solid rgba(0, 0, 0, 0.250) 1px;
+        }
+    }
+}
+@media only screen and (min-width:768px) {
+    .navbar {
+        padding: 1.2rem;
+        .navTitle {
+            font-size: 2.5rem;
+            .logo {
+                width: 2.5rem;
+            }
+        }
+        .hamLink {
+            .hamMenu {
+                width: 2rem;
+            }
+        }
+    }
+    .mobileLinks {
+        .menuWrapper {
+            .navLink {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    
+}
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        padding: 1.5rem;
+        .navTitle {
+            font-size: 3rem;
+        }
+
+        .navLinks {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            vertical-align:middle;
+            font-family: $titleFont;
+            width: 40vw;
+            a {
+                font-size: 1.5rem;
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    color: $fortunaGold;
+                }
+            }
+        }
+    }
+    .hamLink {
+        visibility: hidden;
+    }
+}

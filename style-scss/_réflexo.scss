@@ -1,0 +1,45 @@
+// several uses ressources
+.goldText {
+    color: $fortunaGold;
+}
+
+.reflexoFilter {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+}
+
+.reflexoTitle {
+    font-family: $titleFont;
+    color: $fortunaGold;
+}
+
+.reflexoText {
+    font-family: $textFontS;
+    text-align: justify;
+}
+
+// reflexology banner
+.reflexoBanner {
+    background-image: url(http://localhost/kine-webtech/wp-content/uploads/2021/07/home-reflex-S.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: $textFontS;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+    h1 {
+        font-size: 1.3rem;
+        font-weight: lighter;
+    }
+}
+
+// Presentation of what reflexology is
+.aboutreflexo {
+    padding: 2rem;
+}
+
+// Presentation of the specializations
+.reflexoSpecializations {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
